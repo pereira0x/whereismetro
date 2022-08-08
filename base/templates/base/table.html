@@ -1,0 +1,10 @@
+{% extends 'main.html' %} 
+{% block content %}
+
+{% for linha in response %}
+<h1>{{linha}}</h1>
+<hr>
+{% endfor %}
+
+
+{% endblock content %}
