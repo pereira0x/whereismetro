@@ -4,7 +4,7 @@
 <br />
 <h1>
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Metropolitano_Lisboa_logo.svg/1200px-Metropolitano_Lisboa_logo.svg.png" alt="Logo" width="140" height="110">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Metropolitano_Lisboa_logo.svg/1200px-Metropolitano_Lisboa_logo.svg.png" alt="Logo" width="140" height="130">
   <br>whereismetro
 </h1>
   <p align="center">
