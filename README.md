@@ -63,7 +63,7 @@ http://127.0.0.1:8000/amarela/  ----> Yellow line
 ![alt text](https://github.com/pearsettings44/whereismetro/blob/main/amarela.png?raw=true)
 <p align="center">Yellow line page.</p>
 
-![alt text](https://github.com/pearsettings44/DinoBot/blob/main/verde.png?raw=true)
+![alt text](https://github.com/pearsettings44/whereismetro/blob/main/verde.png?raw=true)
 <p align="center">Green line page.</p>
 
 
