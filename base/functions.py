@@ -35,7 +35,7 @@ def processMetro(metro_info, destino, estacoes):
             metros.append(auxDic)
             count = 0
             auxDic = {}
-    
+
     i = 0
     for metro in metros:
         metro["nome"] = estacoes[i]

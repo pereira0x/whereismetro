@@ -4,11 +4,11 @@
 <br />
 <h1>
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Metro_Lissabon_logo.svg/1200px-Metro_Lissabon_logo.svg.png" alt="Logo" width="140" height="110">
-  <br>DinoBot
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Metropolitano_Lisboa_logo.svg/1200px-Metropolitano_Lisboa_logo.svg.png" alt="Logo" width="140" height="110">
+  <br>whereismetro
 </h1>
   <p align="center">
-    Play the Chrome Dino game using hand gestures or using a bot (WIP).
+    Tracking the arrival times of the Lisbon Metro at each station.
     <br />
     </p>
 </p>
@@ -16,7 +16,7 @@
   <a href="#about-the-project">About The Project</a> •
   <a href="#usage">How To Use</a> •
   <a href="#examples">Examples</a> •
-  <a href="#best-practice">Best Practice</a> •
+  <a href="#to-do">To Do</a> •
 </p>  
 
 <p align="center">
@@ -25,47 +25,50 @@
 </p>                                                                                                                             
                                                                                                                                                       
 ## About The Project
-DinoBot is a Python script for playing the Dinosaur Game (also known as the Chrome Dino). It has the option to control the game with your hand through a video capture device, and the option to play it AFK using a bot. I'm aware that the bot has very poor performance, feel free to open an issue about that.
+Whereismetro is a Django App for tracking real time arrivals of the Lisbon Metro. Currently has it's basic functionality, allowing the user to check all the stations of each line. Next steps on my plans are making the website look good and responsive, make sure it is accessible to all.
 
 ### Installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/pearsettings44/DinoBot
+   git clone https://github.com/pearsettings44/whereismetro
    ```
 2. Install requirements
    ```sh
    pip install -r requirements.txt
    ```
-3. Start the script (using -v or -b flag)
+3. Get yourself an API Key from https://api.metrolisboa.pt/store and store it in the .env file
    ```sh
-   python3 ./dinobot.py -v
+   on your .env file:
+   API_KEY='paste here your key'
+   ```
+4. Deploy the app (default will be on http://127.0.0.1:8000/)
+   ```sh
+   python manage.py runserver
    ```
 
 ## Usage
 ```sh
-usage: dinobot.py [-h] [-b] [-v]
+http://127.0.0.1:8000/verde/    ----> Green line
 
-optional arguments:
-  -h, --help   show this help message and exit
-  -b, --bot    play using a bot
-  -v, --video  play using video capture
+http://127.0.0.1:8000/azul/     ----> Blue line
+
+http://127.0.0.1:8000/vermelha/ ----> Red line
+
+http://127.0.0.1:8000/amarela/  ----> Yellow line
 ```
-To quit the script - press 'q'
+
 
 ## Examples
-![alt text](https://github.com/pearsettings44/DinoBot/blob/main/pic1.png?raw=true)
-<p align="center">Hand closed (No command).</p>
+![alt text](https://github.com/pearsettings44/whereismetro/blob/main/amarela.png?raw=true)
+<p align="center">Yellow line page.</p>
 
-![alt text](https://github.com/pearsettings44/DinoBot/blob/main/pic2.png?raw=true)
-<p align="center">Index finger up (Jump).</p>
-
-![alt text](https://github.com/pearsettings44/DinoBot/blob/main/pic3.png?raw=true)
-<p align="center">Bot in action (should have used a gif :P)</p>
+![alt text](https://github.com/pearsettings44/DinoBot/blob/main/verde.png?raw=true)
+<p align="center">Green line page.</p>
 
 
-## Best Practice
-For the most accurate results, here are some recommendation you should follow:
-- When using your video capture device of choice, make sure it has a decent amount of fps.
-- Make sure you're in a illuminated space, turn on desk lights or open the windows.
-- Try to keep your hands facing the camera in a good angle.
+## To Do
+List of things that are still to be developed:
+- Make the arrivals time update every X seconds instead of needing to reload the page.
+- Make the website look more modern, pretty, responsive and accessible.
+- Expand it to also cover some info about CP trains.
